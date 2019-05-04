@@ -6,6 +6,22 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+
+
+.video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -91,6 +107,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
+        z-index: 2;
 	}
 
 	*, *:before, *:after {
@@ -98,7 +115,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: rgba(255, 255, 255, 0.15);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -197,7 +214,7 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, rgba(255, 255, 255, 0.15), #ffffff);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: linear-gradient(to right, #5e42a6, #b74e91);
@@ -2515,11 +2532,11 @@ input, select, textarea {
 			}
 
 				.wrapper.style1 .icon.major:before {
-					color: #5e42a6;
+					color: rgba(255, 255, 255, 0.15);
 				}
 
 				.wrapper.style1-alt .icon.major:before {
-					color: #493382;
+					color: rgba(255, 255, 255, 0.15);
 				}
 
 				.wrapper.style2 .icon.major:before {
@@ -3226,19 +3243,19 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: rgba(0, 0, 0, 0.7);
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: rgba(255, 255, 255, 0.05);
 		}
 
-		.wrapper.style2 {
-			background-color: #5052b5;
-		}
+.wrapper.style2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.3));
+}
 
 		.wrapper.style2-alt {
-			background-color: #3e4094;
+			background-color: rgba(255, 255, 255, 0.15);
 		}
 
 		.wrapper.style3 {
@@ -3854,14 +3871,13 @@ input, select, textarea {
 		}
 
 /* Intro */
-
-	#intro {
-		background-attachment: fixed;
-		background-image: url("images/intro.svg");
-		background-position: top right;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-	}
+#intro {
+    background-attachment: fixed;
+    /*background-image: url("images/intro.svg");*/
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
 		#intro p {
 			font-size: 1.25em;
