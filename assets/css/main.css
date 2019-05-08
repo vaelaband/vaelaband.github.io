@@ -2562,6 +2562,7 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
+        
 	}
 
 		.image img {
@@ -3524,7 +3525,7 @@ input, select, textarea {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #312450;
+		background: rgba(23, 17, 38, 0.84);
 		cursor: default;
 		height: 100vh;
 		left: 0;
